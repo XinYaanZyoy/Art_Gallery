@@ -17,13 +17,15 @@ title: Maitri's Art Gallery
         <!-- PORTFOLIO -->
         <div class="portfolio">    
             
-            {% assign arts = site.static_files | where: "image", true %}
-                {% for art in arts %}
-                    <a class="item" href="{{art.path}}">
-                        <i class="fa fa-eye" aria-hidden="true"></i>
-                        <div class="item-cover" style="background-image: url({{art.path}})"></div>                
-                    </a>
-                {% endfor %}
+            {% for art in site.arts %}
+                <a class="item" href="{{art.image}}">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <div class="item-cover" style="background-image: url({{art.image}})"></div>                
+                </a>
+                <p>
+                  {{art.title}}
+                </p>
+            {% endfor %}
             
         </div>
         <!-- /PORTFOLIO -->
