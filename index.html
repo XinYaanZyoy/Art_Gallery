@@ -18,12 +18,10 @@ title: Maitri's Art Gallery
         <div class="portfolio">    
             
         {% for art in site.arts %}
-         <div>
                 <a class="item" href="{{art[1].image}}">
                     <div class="item-cover" style="background-image: url({{art[1].image}})"></div>                 
                     <i class="fa fa-eye" aria-hidden="true"></i>
                 </a>
-         </div>
         {% endfor %}
             
 </div>
