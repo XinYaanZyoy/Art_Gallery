@@ -17,7 +17,7 @@ title: Maitri's Art Gallery
         <!-- PORTFOLIO -->
         <div class="portfolio">    
             
-            {% for art in site.arts %}
+<!--             {% for art in site.arts %}
                 <a class="item" href="{{art.image}}">
                     <i class="fa fa-eye" aria-hidden="true"></i>
                     <div class="item-cover" style="background-image: url({{art.image}})"></div>                
@@ -26,7 +26,16 @@ title: Maitri's Art Gallery
                   {{art.title}}
                 </p>
             {% endfor %}
-            
-        </div>
+             -->
+         
+                <a class="item" href="site.arts.art1.image">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <div class="item-cover" style="background-image: url(site.arts.art1.image)"></div>                
+                </a>
+                <p>
+                  {{site.arts.art1.title}}
+                </p>
+
+</div>
         <!-- /PORTFOLIO -->
     
