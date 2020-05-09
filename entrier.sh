@@ -7,7 +7,7 @@ if [ -d "$DIR" ]; then
     git log -1 --name-only --oneline > changes
     count=0
     while read -r line; do
-       printf '%d %s\n' "$count" "${line*//}"
+       printf '%d %s\n' "$count" "${line*}"
        (( count++ ))
     done < changes
 else
