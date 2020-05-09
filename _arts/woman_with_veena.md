@@ -1,0 +1,1 @@
+---$'\n'layout: caption$'\n'title: 'arts/woman_with_veena$'\n'image: arts/woman_with_veena.jpg$'\n'permalink: 'captions/''arts/woman_with_veena---$'\n'
