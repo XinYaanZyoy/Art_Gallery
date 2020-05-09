@@ -15,7 +15,7 @@ if [ -d "$DIR" ]; then
            else
                echo "it was created!";
                echo "creating '_${line}'";
-               echo "---$'\n'layout: caption$'\n'title: ${${line}%.*}$'\n'image: ${line}$'\n'permalink: 'captions/'${${line}%.*}---$'\n'" > "_${line}";
+               echo "---$'\n'layout: caption$'\n'title: ${'${line}'%.*}$'\n'image: ${line}$'\n'permalink: 'captions/'${'${line}'%.*}---$'\n'" > "_${line}";
            fi
        else
            if [ -f "_${line}" ]; then
