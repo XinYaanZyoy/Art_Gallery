@@ -7,6 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest   
-      - steps:
-          id: file_changes
-          uses: trilom/file-changes-action@v1.2.3
+      steps:
+        - uses: lots0logs/gh-action-get-changed-files@2.0.6
+      with:
+        token: $GH_PAT
