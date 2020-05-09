@@ -6,8 +6,8 @@ title: india's Art Gallery
         <div class="hero">
             <!-- FRONT CONTENT -->
             <div class="front-content">
-                <img src="{{site.logo}}" class="img-responsive logo" alt="logo">
-                <h1>{{site.greeting}} I’m <span>{{site.author}}</span>.<br>{{site.heading}}</h1>
+                <img src="{{baseurl}}/{{scope}}/{{site.logo}}" class="img-responsive logo" alt="logo">
+                <h1>{{baseurl}}/{{scope}}/{{site.greeting}} I’m <span>{{site.author}}</span>.<br>{{site.heading}}</h1>
             </div>
             <!-- /FRONT CONTENT -->
        </div>
@@ -16,16 +16,16 @@ title: india's Art Gallery
         <!-- PORTFOLIO -->
         <div class="portfolio">    
 <!--         {% for art in site.arts %}
-                <a alt="{{art[1].title}}" class="item" href="{{art[1].image}}">
+                <a alt="{{art[1].title}}" class="item" href="{{baseurl}}/{{scope}}/{{art[1].image}}">
                     <div alt="{{art[1].title}}" class="item-cover" style="background-image: url({{art[1].image}})"></div>   
                          <i class="fa fa-quote-left" aria-hidden="true" onclick="return false;"></i>
                 </a>
         {% endfor %} -->
          
          {% for art in site.arts %}
-          <a alt="{{art}}" class="item" href="{{art.path}}">
-             <div alt="{{art}}" class="item-cover" style="background-image: url({{art.path}})"></div>   
-             <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='caption/{{art.path}}'; return false;"></i>
+          <a alt="{{art}}" class="item" href="{{baseurl}}/{{scope}}/{{art.path}}">
+             <div alt="{{art}}" class="item-cover" style="background-image: url({{baseurl}}/{{scope}}/{{art.path}})"></div>   
+             <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='{{baseurl}}/{{scope}}/caption/{{art.path}}'; return false;"></i>
           </a>
          {% endfor %}
         </div>
