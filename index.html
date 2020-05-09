@@ -17,12 +17,15 @@ title: Maitri's Art Gallery
         <!-- PORTFOLIO -->
         <div class="portfolio">    
             
-<!--          href="{{art[1].image}}" -->
         {% for art in site.arts %}
                 <a alt="{{art[1].title}}" class="item">
                     <div alt="{{art[1].title}}" class="item-cover" style="background-image: url({{art[1].image}})"></div>                 
-                    <i class="fa fa-eye" onclick=console.log("well!"); aria-hidden="true"></i>
-                 <i style="float:left;" onclick=console.log("working!"); class="fa fa-quote-left" aria-hidden="true"></i>
+                    <a href="{{art[1].image}}">
+                       <i class="fa fa-eye" onclick=console.log("eye!"); aria-hidden="true"></i>
+                    </a>   
+                    <a>
+                       <i style="margin: 0 86%;" onclick=console.log("quote!"); class="fa fa-quote-left" aria-hidden="true"></i>
+                    </a>
                 </a>
         {% endfor %}
             
