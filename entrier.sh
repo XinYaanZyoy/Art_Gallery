@@ -8,7 +8,6 @@ if [ -d "$DIR" ]; then
     i=0
     while read -r line; do
        printf '%d %s\n' "$i" "${line}"
-       (( count++ ))
        if [ "$i" -ne 0 ]; then
            if [ -f "${line}" ]; then
                if [ -f "_${line}" ]; then
@@ -24,6 +23,7 @@ if [ -d "$DIR" ]; then
                fi
            fi
        fi
+    (( count++ ))
     done < changes
 else
     echo "$DIR doesn't exist!";
