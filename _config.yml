@@ -36,3 +36,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-books
+
+theme: jekyll-theme-cayman
