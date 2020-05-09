@@ -1,7 +1,7 @@
 ---
 layout: default
 title: radha krishna pavillon
-permalink: caption/art1
+permalink: caption/radha_krishna_pavillon
 ---
 
 {% include navigation_about.html %}
