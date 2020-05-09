@@ -1,11 +1,8 @@
 ---
-layout: default
+layout: caption
 title: radha krishna pavillon
 permalink: caption/radha_krishna_pavillon
 ---
-
-{% include navigation_about.html %}
-
 # The Eternal Love of Radha and Krishna
 
 1. > An Eternal Love Story (Radha Krishna):
