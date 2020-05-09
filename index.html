@@ -16,16 +16,22 @@ title: Maitri's Art Gallery
         
         <!-- PORTFOLIO -->
         <div class="portfolio">    
-            
         {% for art in site.arts %}
+            <section class="cd-section">
                 <a alt="{{art[1].title}}" class="item" href="{{art[1].image}}">
                     <div alt="{{art[1].title}}" class="item-cover" style="background-image: url({{art[1].image}})"></div>   
-                       
-                 <div onclick="console.log('this is awesome!');">
-                         <i class="fa fa-quote-left" aria-hidden="true" onclick="return false;"></i>
-                 </div>
+  
+                 		<div class="cd-modal-action">
+                         <i class="fa fa-quote-left btn" data-type="modal-trigger" aria-hidden="true" onclick="return false;">Fire</i>
+                      			<span class="cd-modal-bg"></span>
+                   </div>
+                   <div class="cd-modal">
+                     			<div class="cd-modal-content">
+                        </div>
+                   </div>
                 </a>
+             		<a href="#0" class="cd-modal-close">Close</a>
         {% endfor %}
-            
-</div>
+            </section>    
+        </div>
         <!-- /PORTFOLIO -->
