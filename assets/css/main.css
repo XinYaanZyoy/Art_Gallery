@@ -234,7 +234,6 @@ a:hover
 
     opacity: 1;
     border-radius: 100%;
-    background-color: #d80f48;
 }
 
 .preloader.hide-preloader .bounce
@@ -564,11 +563,6 @@ a:hover
     background: rgba(255, 255, 255, .4);
 }
 
-.featherlight .featherlight-close-icon:hover
-{
-    background: #d80f48;
-}
-
 .featherlight-next,
 .featherlight-previous
 {
@@ -609,12 +603,6 @@ a:hover
     font-size: 2rem;
 
     content: '\f177';
-}
-
-.featherlight-next:hover,
-.featherlight-previous:hover
-{
-    background: #d80f48;
 }
 
 .featherlight-previous
