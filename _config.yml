@@ -14,6 +14,8 @@ scope: Art_Gallery
 theme_color: "#363636"
 # background color of caption page
 caption_bg_color: "#ccc"
+# text color of captions
+caption_text_color: "#fff"
 
 # metadata settings
 # _________________________________
