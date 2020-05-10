@@ -153,7 +153,6 @@ a:hover
 
     border-width: 0 15rem 15rem 0;
     border-style: solid;
-    border-color: transparent #d80247 transparent transparent;
 }
 
 .navigation-button p:hover:after
@@ -432,7 +431,6 @@ a:hover
 
     color: #fff;
     border-radius: 100px;
-    background: #d80f48;
 }
 
 
@@ -536,7 +534,6 @@ a:hover
 
     border-width: 0 10rem 10rem 0;
     border-style: solid;
-    border-color: transparent #d80247 transparent transparent;
 }
 
 .featherlight .featherlight-content
@@ -725,7 +722,6 @@ a:hover
 
     color: #fff;
     border-radius: 100%;
-    background: #d80f48;
 }
 
 .footer .social-icons li:hover
@@ -797,5 +793,4 @@ a:hover
 
     color: #fff;
     border-radius: 100px;
-    background: #d80f49;
 }
