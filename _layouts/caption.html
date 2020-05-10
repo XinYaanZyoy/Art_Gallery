@@ -145,16 +145,11 @@
         <!-- JAVASCRIPTS -->
         <script type="text/javascript" src="{{site.baseurl}}/{{site.scope}}/assets/js/plugins.js"></script>
         <script type="text/javascript" src="{{site.baseurl}}/{{site.scope}}/assets/js/main.js"></script>
-         <script>
-//       let shareData = {
-//         title: '{{site.name}}',
-//         text: 'An Art '+'"'+document.URL.split('/').pop()+'"'+' by '+'{{site.author}}'+' On '+'{{site.name}}',
-//         url: '{{site.baseurl}}/{{site.scope}}'+'#'+document.URL.split('/').pop(),
-//       }
+<!--          <script>
       let shareData = {
-        title: 'title',
-        text: 'text',
-        url: 'url',
+        title: '{{site.name}}',
+        text: 'An Art '+'"'+document.URL.split('/').pop()+'"'+' by '+'{{site.author}}'+' On '+'{{site.name}}',
+        url: '{{site.baseurl}}/{{site.scope}}'+'#'+document.URL.split('/').pop(),
       }
 
       const btn = document.querySelector('button');
@@ -167,6 +162,26 @@
           )
           .catch((e) =>
             resultPara.textContent = 'Error: ' + e;
+          )
+      });
+    </script> -->
+        <script>
+      let shareData = {
+        title: 'MDN',
+        text: 'Learn web development on MDN!',
+        url: 'https://developer.mozilla.org',
+      }
+
+      const btn = document.querySelector('button');
+      const resultPara = document.querySelector('.result');
+
+      btn.addEventListener('click', () => {
+        navigator.share(shareData)
+          .then(() =>
+            resultPara.textContent = 'MDN shared successfully'
+          )
+          .catch((e) =>
+            resultPara.textContent = 'Error: ' + e
           )
       });
     </script>
