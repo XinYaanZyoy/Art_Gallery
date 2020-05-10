@@ -34,7 +34,11 @@
         <link href="https://fonts.googleapis.com/css?family=Bellefair&amp;subset=latin-ext" rel="stylesheet">
         <!-- STYLESHEETS -->
         <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{site.scope}}/assets/css/plugins.css">
-<!--         <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{site.scope}}/assets/css/main.css"> -->
+        <style>
+            .navigation-button p:after{
+                border-color: transparent {{site.theme_color}} transparent transparent;
+            }
+        </style>
                 <style>
             .navigation-button
 {
@@ -118,7 +122,7 @@
 
         </style>
     </head>
-    <body style="overflow-y: scroll; background-color: #FF6666; color:white; padding: 5%;">
+    <body style="overflow-y: scroll; background-color: {{site.caption_bg_color}}; color:white; padding: 5%;">
 
 
 <!-- NAVIGATION BUTTON -->
